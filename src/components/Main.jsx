@@ -1,5 +1,4 @@
 import React from "react";
-import memesData from "../memesData";
 
 export default function Main(){
 
@@ -16,7 +15,7 @@ export default function Main(){
         fetch("https://api.imgflip.com/get_memes")
         .then(res => res.json())
         .then(data => setAllMeme(data))
-    },[memes])
+    },[])
 
     function handleChange(event){
         const {name, value} = event.target
